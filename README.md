@@ -17,3 +17,6 @@ Usage
       $verified = $iv->verify($request);
         
     }
+
+Paypal IPN simulator:
+https://developer.paypal.com/webapps/developer/applications/ipn_simulator

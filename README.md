@@ -1,5 +1,7 @@
 PHP PayPal IPN Verifier
-=======================
+-----------------------
+
+Simple IPN verifier with log option
 
 Usage
 -----

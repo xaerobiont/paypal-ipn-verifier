@@ -1,14 +1,13 @@
 PHP PayPal IPN Verifier
 -----------------------
 
-Simple IPN verifier with log option
+Simple IPN verifier via cURL with log option
 
 Usage
 -----
 
-    <?php
-  
     public function yourIpnListener(){
+        
       $request = $_POST; // get paypal post request
       $iv = new IpnVerifier();
       $iv->sandbox = true; // false by default
@@ -16,6 +15,5 @@ Usage
       $iv->log = true; // false by default
       $iv->log_file = '/absolute/path/to/writable/log/file.log';
       $verified = $iv->verify($request);
+        
     }
-    
-    ?>
